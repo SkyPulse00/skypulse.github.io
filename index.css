@@ -130,16 +130,16 @@ footer {
         flex-direction: column; 
     }
     h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
     h2, p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .buttonto {
-        padding: 10px 20px;
-        font-size: 12px;
+        padding: 8px 16px;
+        font-size: 10px;
     }
     footer {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
