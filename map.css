@@ -163,10 +163,14 @@ li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
+        .buttoncon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px; /* Adjust as needed */
     }
+
 
     ul {
         flex-direction: column;
@@ -194,4 +198,11 @@ li a:hover {
         width: auto;
         padding: 10px;
     }
+    .buttonto {
+        width: auto; /* Prevents weird stretching */
+        padding: 12px 24px;
+        text-align: center;
+    }
+}
+
 }
