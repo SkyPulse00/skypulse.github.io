@@ -1,0 +1,145 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+* {
+    text-decoration: none;
+}
+.navbar {
+    font-family: cambria;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(1, 128, 128, 1);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: floralwhite;
+}
+
+.logo img {
+    width: 120px;
+    height: 60px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bold;  
+}
+li {
+    margin-left: 10px;
+}
+li a {
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 5px 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+li a:hover {
+    background-color: #007bff;
+    color: whitesmoke;
+}
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-family: Georgia;
+}
+h2 {
+    font-size: 20px;
+    font-family: Cambria;
+}
+p {
+    
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: Helvetica, sans-serif ;
+    margin-top: 6%;
+}
+.buttoncon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+}
+.buttonto {
+    background-color: lightseagreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.buttonto:hover{
+	background-color: #007bff;
+	color: white;
+	transform: scale(1.1);
+}
+footer {
+  background-color: rgba(1, 128, 128, 1);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.poter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.poter a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.poter a img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul {
+        flex-direction: column; 
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2, p {
+        font-size: 14px;
+    }
+    .buttonto {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    footer {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,197 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #509995, #469e99);
+    margin: 0;
+    color: white;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: cambria;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(1, 128, 128, 1);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: floralwhite;
+}
+
+.logo img {
+    width: 120px;
+    height: 60px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bold;
+}
+
+li {
+    margin-left: 10px;
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+li a:hover {
+    background-color: #007bff;
+    color: whitesmoke;
+}
+
+/* Grid layout */
+.grid-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: 650px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid #0073CF;
+}
+
+.container {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #0073CF;
+    color: white;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: lightseagreen;
+    transform: scale(1.02);
+}
+
+.weather-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.weather-icon {
+    font-size: 3.5em;
+    margin: 10px;
+}
+
+.temperature {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.weather-details p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.loading {
+    font-style: italic;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    color: #ff6666;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    .grid-container, .column {
+        width: 100%;
+    }
+
+    .card {
+        min-height: auto;
+    }
+
+    .weather-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+        width: auto;
+        padding: 10px;
+    }
+}
