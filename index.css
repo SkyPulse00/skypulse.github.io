@@ -1,8 +1,12 @@
 body {
+    background-image: url('pinatuboo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh; /* Ensures full viewport coverage */
+    background-color: #000; /* Fallback color */
+
 }
 * {
     text-decoration: none;
